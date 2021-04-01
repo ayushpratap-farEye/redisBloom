@@ -10,7 +10,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Redis bloom filter with nodejs
     <br> 
 </p>
 
