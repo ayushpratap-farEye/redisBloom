@@ -1,12 +1,11 @@
-// const bloom = require('./utils/redisUtil');
-const bloom = require('./utils/IoredisBloom');
+const bloom = require('./utils/Rebloom');
 const express = require('express');
 const app = express();
-const {addKeyToFilter, checkIfKeyExists} = require('./controller/bloomController');
+const {addKeyToFilter, checkIfKeyExists} = require('./controller/rebloom/bloomController');
 
 const start = async function() {
     //  Connect to redis bloom filter
-    // await bloom.connect();
+    await bloom.connect();
 
     //  Start web server
     app.get('/', (req, res) => {

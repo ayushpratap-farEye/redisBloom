@@ -2,9 +2,9 @@
   "name": "redisbloom",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "ioredis": "node ioredis.js",
+    "rebloom": "node rebloom.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ayush Pratap Singh",
