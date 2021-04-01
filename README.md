@@ -1,13 +1,5 @@
 <h3 align="center">redisbloom</h3>
 
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/ayushpratap-farEye/redisBloom/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/ayushpratap-farEye/redisBloom/pulls)
-
-</div>
-
 ---
 
 <p align="center"> Redis bloom filter with nodejs
@@ -146,3 +138,4 @@ curl --location --request POST 'localhost:3000/check_key?key=foo'
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@ayushpratap-farEye](https://github.com/ayushpratap-farEye)
+---
