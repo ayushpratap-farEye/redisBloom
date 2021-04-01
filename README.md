@@ -18,7 +18,29 @@
 ## 🧐 About <a name = "about"></a>
 
 This is a POC for demosntration of how to use redis bloom filter with nodejs
-to help in de duplication data
+to help in de duplication data.
+
+This project contains 2 implementation:
+1. With ioredis
+2. With rebloom library : https://albert-team.github.io/rebloom/
+
+### With ioredis
+ioredis is a popular nodejs client for Redis.
+As bloomfilter is a module which has to be loaded on redis to work with, no Redis client implicitly 
+has the bloom filter commands built in work out of the box. This is where ioredis comes handy, ioredis has a
+builtin module **createBuiltinCommand** which can be leveraged to add any Redis-cli command. With this we can
+use same redis connection for whole application.
+
+Here we've added commands to _ADD_, _EXISTS_ & _RESERVE_ to ioredis intance. To know more about it's implementation take a look [here](https://github.com/ayushpratap-farEye/redisBloom/blob/ceeb8415b4a169f6e85e166d5524ceffe451856e/utils/IoredisBloom.js)
+
+### With rebloom library
+RedisBloom module has a JavaScript library named [rebloom](https://albert-team.github.io/rebloom/).
+This library provides lot of capability out of the box like _ADD_ & _EXISTS_, while using this we don't have to
+change or add anything to the libaray. It creates it's own connection to Redis's bloom filter which will be seperate to the
+connection to Redis used in application.
+
+To know more it's implementation take a look [here](https://github.com/ayushpratap-farEye/redisBloom/blob/ceeb8415b4a169f6e85e166d5524ceffe451856e/utils/Rebloom.js)
+
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
