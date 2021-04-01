@@ -131,8 +131,8 @@ curl --location --request POST 'localhost:3000/check_key?key=foo'
 
 - [Express](https://expressjs.com/) - Server Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [Redis] (https://redis.io/) - Redis Server
-- [RedisBloom] (https://oss.redislabs.com/redisbloom/Quick_Start/) - Redis Bloom Filter
+- [Redis](https://redis.io/) - Redis Server
+- [RedisBloom](https://oss.redislabs.com/redisbloom/Quick_Start/) - Redis Bloom Filter
 
 ## ✍️ Authors <a name = "authors"></a>
 
